@@ -7,8 +7,10 @@ pipeline {
                 branch 'main'
             }
             steps {
-                git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
-                echo 'main Branch'
+                script{
+                    git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
+                    echo 'main Branch'
+                }
             }
         }
        stage('development Branch') {
@@ -16,8 +18,10 @@ pipeline {
                 branch 'development'
             }
             steps {
-                git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
-                echo 'development Branch'
+                script{
+                     git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
+                     echo 'development Branch'
+                }
             }
         }
         stage('testing Branch') {
@@ -25,8 +29,10 @@ pipeline {
                 branch 'testing'
             }
             steps {
-                git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
-                echo 'testing Branch'
+                script{
+                     git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
+                     echo 'testing Branch'
+                }
             }
         }
       stage('sailaxmi Branch') {
@@ -34,8 +40,10 @@ pipeline {
                 branch 'sailaxmi'
             }
             steps {
-                git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
-                echo 'sailaxmi Branch'
+                script{
+                    git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
+                    echo 'sailaxmi Branch'
+                }
             }
         }
     }
